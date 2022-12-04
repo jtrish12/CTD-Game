@@ -1,0 +1,84 @@
+question6=input("During your school holidays, your friends invite you for a overseas trip to Japan ,\n (1) Join the trip Japan, \n (2) Skip the trip and instead have a staycaytion in Singapore? \n Type 1 OR 2 ")
+if question6 == "1":
+    answer8=input(" You agreed to go for the Japan trip. Would you like to \n (1) Share a BIGGER hotel room with your friends? - $100 , \n (2) Have a SMALLER hotel room to yourself? - $ 250 \n Type 1 OR 2 ")
+    if answer8 == '1':
+        print("You agreed to share a room with your friends")
+        time.sleep(2)
+        account_balance=account_balance-100
+        print("Your account balance is now $"+ str(account_balance))
+    elif answer8 == '2':
+        print("You have decided to live comfortably in your own hotel room")
+        time.sleep(2)
+        account_balance=account_balance-250
+        print("Your account balance is now $"+ str(account_balance))   
+    else:
+        print("Invalid Input, Run again\n")
+        exit()    
+elif question6 == "2":
+    print("You decided to save some money and have a staycay in Singapore.")
+    account_balance=account_balance- 50
+    print("Your account balance is now $"+ str(account_balance))
+    answer9=input("To travel around Singapore while on your staycay would you \n (1) Take public transport? - $3, \n (2) Call a Grab car to drive you around? - $25 \n Type 1 OR 2 ")
+    if answer9 == '1':
+        print("You have decided to save some money and take public transport")
+        time.sleep(2)
+        account_balance=account_balance- 3
+        print("Your account balance is now $"+ str(account_balance))
+    elif answer9 == '2':
+        print("You have decided spend more money to travel with ease in a Grab car")
+        time.sleep(2)
+        account_balance=account_balance- 25
+        print("Your account balance is now $"+ str(account_balance))
+else:
+    print("Invalid Input, Run again\n")
+    exit()
+question7=input("Your friends are hosting a Christmas party and are having a pot luck.Do you \n (1) Buy a log cake from a cake shop. , \n (2) Buy ingredients and bake our own log cake? \n Type 1 OR 2 ")
+if question7 == "1":
+    answer10=input(" You chose to buy a log cake for the Christmas party. Where do you want to buy the log cake from? \n (1) A specially cutomised log cake from The Cake Shop. - $75 , \n (2) A standard log cake from BreadTalk - $40 \n Type 1 OR 2  ")
+    if answer10 == '1':
+        print("You chose to spend a little more money to buy a specially made cake from The Cake Shop.")
+        time.sleep(2)
+        account_balance=account_balance-75
+        print("Your account balance is now $"+ str(account_balance))
+    elif answer10 == '2':
+        print("You chose to all out on an unnecessarily expensive log cake.")
+        time.sleep(2)
+        account_balance=account_balance-40
+        print("Your account balance is now $"+ str(account_balance))   
+    else:
+        print("Invalid Input, Run again\n")
+        exit()    
+elif question7 == "2":
+    print("You have decided to save some money and bake your own log cake from scratch")
+    time.sleep(2)
+    account_balance=account_balance-20
+    print("Your account balance is now $"+ str(account_balance))
+else:
+    print("Invalid Input, Run again\n")
+    exit()
+question8=input(" Apple just released the latest Iphone and everyone is scrambling to get it. \n (1) Do you buy a new phone to keep up with the trends? , \n (2) Use the phone that you currently have that is working perfectly fine?  \n Type 1 OR 2 ")
+if question8 == "1":
+    print("You chose to buy a new phone.")
+    time.sleep(2)
+    account_balance=account_balance-200
+    print("Your account balance is now $"+ str(account_balance))
+    answer10=input(" You chose to buy the new Iphone. But unfortunately on the way to school you dropped it and the tempered glass screen protector cracked. Do you \n (1) Get a new screen protector  , \n (2) Continue to use the phone with the cracked screen protector \n Type 1 OR 2  ")
+    if answer10 == '1':
+        print("You chose to get your screen protector replaced.")
+        time.sleep(2)
+        account_balance=account_balance-30
+        print("Your account balance is now $"+ str(account_balance))
+    elif answer10 == '2':
+        print("You chose to continue using your phone with the cracked screen.")
+        time.sleep(2)
+        print("Your account balance is now $"+ str(account_balance))   
+    else:
+        print("Invalid Input, Run again\n")
+        exit()    
+elif question8 == "2":
+    print("You chose to use your current phone and save money rather than spend it on a new phone that you did not need.")
+    time.sleep(2)
+    print("Your account balance is now $"+ str(account_balance))
+else:
+    print("Invalid Input, Run again\n")
+    exit()
